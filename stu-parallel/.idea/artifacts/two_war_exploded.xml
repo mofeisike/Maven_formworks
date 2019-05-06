@@ -1,0 +1,24 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="two:war exploded">
+    <output-path>$PROJECT_DIR$/two/target/two</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="two" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="archive" name="three-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="three" />
+          </element>
+          <element id="archive" name="one-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="one" />
+          </element>
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/two/target/two/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="two/web/Web" />
+    </root>
+  </artifact>
+</component>
